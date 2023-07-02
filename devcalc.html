@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dev Calculator</title>
+        <link rel="stylesheet" href="devcalc.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+
+    <body>
+
+        <div class="calculator">
+            
+            <div class="calc-diplay-box">
+                <div class="pre-calc"></div>
+                <div class="main-calc">
+                    <div class="main-calc-text"></div>
+                </div>
+            </div>
+
+            <div class="num-pad">
+                <div class="num grid-column-span" onclick="delnum()">Del</div>
+                <div class="num grid-column-span" onclick="cleardisplay()">C</div>
+                
+                <div class="num" onclick="displaynum(7)">7</div>
+                <div class="num" onclick="displaynum(8)">8</div>
+                <div class="num" onclick="displaynum(9)">9</div>
+
+                <div class="num" onclick="divnum()">/</div>
+
+                <div class="num" onclick="displaynum(4)">4</div>
+                <div class="num" onclick="displaynum(5)">5</div>
+                <div class="num" onclick="displaynum(6)">6</div>
+
+                <div class="num" onclick="prodnum()">*</div>
+
+                <div class="num" onclick="displaynum(1)">1</div>
+                <div class="num" onclick="displaynum(2)">2</div>
+                <div class="num" onclick="displaynum(3)">3</div>
+
+                <div class="num" onclick="subnum()">-</div>
+
+                <div class="num l" onclick="displaynum(0)">0</div>
+                <div class="num" onclick="decimal()">.</div>
+                <div class="num" onclick="displayans()">=</div>
+
+                <div class="num addition r" onclick="addnum()">+</div>
+            </div>
+        </div>
+
+        
+        <script src="calcscript.js"></script>
+    </body>
+</html>
